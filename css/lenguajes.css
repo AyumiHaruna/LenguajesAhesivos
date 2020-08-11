@@ -15,8 +15,6 @@
     src: url('../webfonts/tipo_jacksilver/Jacksilver.ttf');
 }
 
-
-
 body{
     background: #000;
     background-image: url('../img/PlecaComunSticker.png');
@@ -60,7 +58,7 @@ body{
     /* font-family: 'tipo_jacksilver'; */
     font-family: 'Montserrat';
     font-size: 1em;
-    color: #7abed7;
+    color: #ffffff;
     text-align: justify;
     padding: 2.5vw 8vw;
 }
@@ -118,6 +116,42 @@ body{
     width: 100%;
 }
 
+/*-----------------------------
+        COMUN 1-2
+-------------------------------*/
+.comun1-2{
+    display: none;
+    opacity: 0;
+    padding-left: 5vw;
+}
+.comun1-2 .logo{
+    text-align: center;
+}
+.comun1-2 .logo img{
+    width: 45%;
+}
+.comun1-2 .titulo-seccion{
+    text-align: center;
+    font-family: 'tipo_jacksilver';
+    color: #bbbcbc;
+    font-size: 3.2em;
+    margin-top: 1.2vw;
+    margin-bottom: 2vw;
+}
+.comun1-2 .descripcion{
+    font-family: 'Montserrat';
+    font-size: 1em;
+    color: #ffffff;
+    text-align: justify;
+    padding: 0 4vw;
+}
+.comun1-2 .contenedor-foto img{
+    width: 100%;
+}
+
+/*-----------------------------
+        FOOTER
+-------------------------------*/
 
 .footer{
     text-align: center;
