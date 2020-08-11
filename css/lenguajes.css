@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'fresh_marker';
+    src: url('../webfonts/fresh_marker/freshmarker.ttf');
+}   
+@font-face {
+    font-family: 'take_cover';
+    src: url('../webfonts/take_cover/Take_cover.ttf');
+} 
+@font-face {
+    font-family: 'montserrat';
+    src: url('../webfonts/montserrat/Montserrat-Medium.ttf');
+}
+@font-face {
+    font-family: 'tipo_jacksilver';
+    src: url('../webfonts/tipo_jacksilver/Jacksilver.ttf');
+}
+
+
+
+body{
+    background: #000;
+    background-image: url('../img/PlecaComunSticker.png');
+    background-repeat: repeat-y;
+    background-size: 4%;
+}
+
+
+
+.header{
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding-left: 5vw;
+}
+.header img{
+    width: 14%;
+}
+
+
+/*-----------------------------
+        HOME DIV
+-------------------------------*/
+.home-div{
+    padding-left: 5vw;
+    text-align: center;
+    /* display: none;
+    opacity: 0; */
+}
+.home-div iframe{
+    width: 85%;
+    height: 80vh;
+}
+.home-div .logo{
+    margin-top: 2vw;
+}
+.home-div .logo img{
+    width: 45%;
+}
+.home-div .descripcion{
+    /* font-family: 'tipo_jacksilver'; */
+    font-family: 'Montserrat';
+    font-size: 1em;
+    color: #7abed7;
+    text-align: justify;
+    padding: 2.5vw 8vw;
+}
+.home-div .accion{
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    font-family: 'Montserrat';
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #ffbf00;
+}
+.home-div .accion button{
+    border: none;
+    background: none;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+    width: 80px;
+    height: 80px;
+}
+.home-div .accion button img{
+    width: 100%;
+}
+
+
+/*-----------------------------
+        COMUN 1-1
+-------------------------------*/
+.comun1-1{
+    display: none;
+    opacity: 0;
+    padding-left: 5vw;
+}
+.comun1-1 .logo{
+    text-align: center;
+}
+.comun1-1 .logo img{
+    width: 45%;
+}
+.comun1-1 .titulo-seccion{
+    text-align: center;
+    font-family: 'tipo_jacksilver';
+    color: #bbbcbc;
+    font-size: 3.2em;
+    margin-top: 1.2vw;
+    margin-bottom: 2vw;
+}
+.comun1-1 .descripcion{
+    font-family: 'Montserrat';
+    font-size: 1em;
+    color: #7abed7;
+    text-align: justify;
+    padding: 0 4vw;
+}
+.comun1-1 .contenedor-foto img{
+    width: 100%;
+}
+
+
+.footer{
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 5vw;
+}
+.footer img{
+    width: 50%;
+}
