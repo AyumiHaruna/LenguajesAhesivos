@@ -55,6 +55,18 @@ body{
 .home-div .logo img{
     width: 45%;
 }
+
+/* ----- logotipos ----- */
+.home-div .logoAyr{
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.home-div .logoAyr img{
+    width: 40%;
+}
+
 .home-div .descripcion{
     /* font-family: 'tipo_jacksilver'; */
     font-family: 'Montserrat';

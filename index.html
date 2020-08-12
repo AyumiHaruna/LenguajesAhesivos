@@ -33,13 +33,17 @@
         <link rel="stylesheet" href="css/lenguajes.css">
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid home-div">
         <!-- header alas y raices -->
         <section>
             <div class="row">
-                <div class="col-12 header">
+                <div class="col-lg-4">
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 logoAyr">
                     <a href="http://www.alasyraices.gob.mx">
                     <img src="img/logoAyr.png" alt="Logo de Alas y Raíces"></a>
+                </div>
+                <div class="col-4">
                 </div>
             </div>
         </section>
@@ -87,7 +91,7 @@
                             Núcleo 1: Común-relato
                         </div>
                         <div class="col-7 descripcion">
-                            <h1 class="text-warning">INICIOS DEL STICKER URBANO EN MÉXICO</h1>
+                            <h2 class="text-warning">INICIOS DEL STICKER URBANO EN MÉXICO</h2>
                             <br>No se sabe a ciencia cierta quiénes y cuándo introdujeron el sticker urbano a México. Lo que se sabe es que los precursores de este arte comenzaron a trabajar en la década de los años noventa y poco a poco, ya sea por imitación, por invitación o simplemente porque les pareció buena idea, muchos artistas comenzaron a dedicarse a él.
                             <br>
                             <br>Sin embargo, la historia del sticker urbano no ha sido lineal, ha tenido altibajos: épocas gloriosas donde la ciudad entera fue tapizada con diversos stickers y épocas en las que muchos exponentes abandonaron esta actividad. Felizmente, podemos decir que al día de hoy, este arte se encuentra en un gran momento.
@@ -204,33 +208,33 @@
                                 <div class="row">
                                 
                                     <div class="col-lg-8"> 
-                                    <!-- VIDEO -->
+                                    <!-- VIDEO de los exponentes -->
                                     <iframe id="exponentes_video_player" src="https://www.youtube.com/embed/_m11M2Otd9o" frameborder="0" allowfullscreen></iframe> 
                                         <hr> 
                                     </div>
                                     <!-- LISTA DE REPRODUCCIÓN DE VIDEO -->
                                     <div class="col-lg-4 exponentes_list text-black">
-                                        <div class="btn btn-block card-header header_title" onclick="changeVideo( 1 )">
+                                        <div class="btn btn-block card-header header_title" type="button" data-toggle="collapse" data-target="#exponentesoneList" aria-expanded="true" onclick="changeVideo( 1 )">
                                             <img src="img/comunsticker/btn.png" alt=""> ACAMONCHI 
                                         </div>
                                         
-                                        <div class="btn btn-block card-header header_title" onclick="changeVideo( 2 )">
+                                        <div class="btn btn-block card-header header_title" type="button" data-toggle="collapse" data-target="#exponentesoneList" aria-expanded="true" onclick="changeVideo( 2 )">
                                             <img src="img/comunsticker/btn.png" alt=""> CHARRITOS  
                                         </div>
 
-                                        <div class="btn btn-block card-header header_title" onclick="changeVideo( 3 )">
+                                        <div class="btn btn-block card-header header_title" type="button" data-toggle="collapse" data-target="#exponentesoneList" aria-expanded="true" onclick="changeVideo( 3 )">
                                             <img src="img/comunsticker/btn.png" alt=""> REMS  
                                         </div>
                                         
-                                        <div class="btn btn-block card-header header_title" onclick="changeVideo( 4 )">
+                                        <div class="btn btn-block card-header header_title" type="button" data-toggle="collapse" data-target="#exponentesoneList" aria-expanded="true" onclick="changeVideo( 4 )">
                                             <img src="img/comunsticker/btn.png" alt=""> SOK
                                         </div>
                                         
-                                        <div class="btn btn-block card-header header_title" onclick="changeVideo( 5 )">
+                                        <div class="btn btn-block card-header header_title" type="button" data-toggle="collapse" data-target="#exponentesoneList" aria-expanded="true" onclick="changeVideo( 5 )">
                                             <img src="img/comunsticker/btn.png" alt=""> ZTEP
                                         </div>
 
-                                        <div class="btn btn-block card-header header_title" onclick="changeVideo( 5 )">
+                                        <div class="btn btn-block card-header header_title" type="button" data-toggle="collapse" data-target="#exponentesoneList" aria-expanded="true" onclick="changeVideo( 6 )">
                                             <img src="img/comunsticker/btn.png" alt=""> TWELVE
                                         </div>
                                     </div> 
@@ -332,7 +336,6 @@
                         <div class="col-12 video">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/o3jf7qvDvWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <br>
-                                <br>
                         </div>
                 </div>
                 <!-- VideoReto -->
@@ -343,8 +346,7 @@
                         </div>
                         <div class="col-12 gal_bloque">
                             <button class="gal_car_prev menu_car_btn"> <i class="fas fa-chevron-left"></i> </button>
-                            <button class="gal_car_next menu_car_btn"> <i class="fas fa-chevron-right"></i> </button>                            
-
+                            <button class="gal_car_next menu_car_btn"> <i class="fas fa-chevron-right"></i> </button>             
                             <!-- Slider main container -->
                             <div class="gallery_container">
                                 <!-- Additional required wrapper -->
@@ -425,4 +427,5 @@
 </body>
 <script src="js/lenguajes.js"></script>
 <script src="js/exponentes.js"></script>
+<script src="js/Data/exponentesone_data.js"></script>
 </html>
