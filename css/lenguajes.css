@@ -64,7 +64,6 @@ body{
     padding: 2.5vw 8vw;
 }
 
-
 .accion{
     margin-top: 2vw;
     margin-bottom: 1vw;
@@ -86,7 +85,6 @@ body{
 }
 
 
-
 /*-----------------------------
         COMUN 1-1
 -------------------------------*/
@@ -99,12 +97,12 @@ body{
     text-align: center;
 }
 .comun1-1 .logo img{
-    width: 45%;
+    width: 35%;
 }
 .comun1-1 .titulo-seccion{
     text-align: center;
     font-family: 'tipo_jacksilver';
-    color: #bbbcbc;
+    color: #bbbcbc; 
     font-size: 3.2em;
     margin-top: 1.2vw;
     margin-bottom: 2vw;
@@ -112,7 +110,7 @@ body{
 .comun1-1 .descripcion{
     font-family: 'Montserrat';
     font-size: 1em;
-    color: #7abed7;
+    color: #ffffff;
     text-align: justify;
     padding: 0 4vw;
 }
@@ -171,8 +169,13 @@ body{
     text-align: center;
 }
 .comun1-2 .logo img{
-    width: 45%;
+    width: 25%;
 }
+.comun1-2 .video iframe{
+    width: 100%;
+    height: 50vh;
+}     
+
 .comun1-2 .titulo-seccion{
     text-align: center;
     font-family: 'tipo_jacksilver';
@@ -186,14 +189,60 @@ body{
     font-size: 1em;
     color: #ffffff;
     text-align: justify;
-    padding: 0 4vw;
+    padding: 2 4vw;
 }
 .comun1-2 .contenedor-foto img{
     width: 100%;
 }
 
+.exponentes_list {
+    font-size: 1em;
+    color: #0000; /* texto de la tarjeta */
+}
+
+    .exponentes_list #exponentesoneList {
+        overflow: auto;
+        max-height: 30vw;
+    }
+    
+.exponentes_list .header_title {
+    text-align: center;
+    background-color: #ffc000; /* color de los botones*/
+    color: #000000; /* texto del header de la lista*/
+    font-size: 1.3em;
+}
+.exponentes_list img{
+    width: 10%;
+    margin-right: 0vw; 
+}
+.exponentes_list button{
+    font-family: 'Montserrat-bold';
+    font-size: 1em;
+    color: #ce8dff;
+}
+
+.exponentes_title {
+    font-family: 'Montserrat-bold';
+    text-align: center;
+    font-size: 1.5em;
+    padding: 2vw;
+}
 
 
+/*-----------------------------
+        SEMBLANZAS
+-------------------------------*/
+.semblanzas .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.semblanzas h2 {
+  font-weight: 400;
+}
+.semblanzas .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
 /*-----------------------------
         FOOTER
 -------------------------------*/
