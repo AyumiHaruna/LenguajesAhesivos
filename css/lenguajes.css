@@ -173,7 +173,7 @@ body{
         COMUN 1-2
 -------------------------------*/
 .comun1-2{
-    display: none;
+    /* display: none; */
     opacity: 0;
     padding-left: 5vw;
 }
@@ -238,6 +238,41 @@ body{
     text-align: center;
     font-size: 1.5em;
     padding: 2vw;
+}
+
+.comun1-2 .gal_titulo{
+    color: #ffbf00;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.comun1-2 .gal_bloque{
+    padding: 0 10vw;
+}
+.comun1-2 .gal_bloque .gallery_container_second{
+    overflow: hidden;
+}
+.comun1-2 .gal_bloque .menu_car_btn{
+    position: absolute;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 2.5em;
+    top: 6vw;
+}
+.comun1-2 .gal_bloque .gal_sec_car_prev{
+    left: 3vw;
+}
+.comun1-2 .gal_bloque .gal_sec_car_next{
+    right: 3vw;
+}
+.comun1-2 .gallery_container .swiper-slide{
+    /* background: #bbbcbc; */
+    /* width: 300px; */
+    margin: 1vw;
+    text-align: center;
 }
 
 

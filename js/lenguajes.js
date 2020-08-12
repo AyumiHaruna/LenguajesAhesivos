@@ -35,8 +35,28 @@ document.addEventListener('DOMContentLoaded', function() {
         // }
     });
 
+    var mySecondSwiper = new Swiper('.gallery_container_second', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 5,
+        centeredSlides: true,
+    
+        // Navigation arrows
+        navigation: {
+        nextEl: '.gal_sec_car_next',
+        prevEl: '.gal_sec_car_prev',
+        },
+
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+    });
+
     //time to hide galery divs
     document.getElementById("comun1-1").style.display = "none"; 
+    document.getElementById("comun1-2").style.display = "none"; 
 
 }, false);
 
