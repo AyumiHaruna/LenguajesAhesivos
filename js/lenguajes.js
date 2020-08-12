@@ -1,17 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
-    // create menu carousel
-    var mySwiper = new Swiper('.gallery1', {
-        slidesPerView: 5,
-        centeredSlides: true,
+    //create gallery divs
+    //gallery divs must have display block when are created
+    var mySwipertest = new Swiper('.gallery_container', {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
-      
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
+        slidesPerView: 5,
+        centeredSlides: true,
       
         // Navigation arrows
         navigation: {
@@ -24,30 +19,34 @@ document.addEventListener('DOMContentLoaded', function() {
             disableOnInteraction: false,
         },
 
-        breakpoints: {
-            640: {
-              slidesPerView: 1.5,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 3.5,
-              spaceBetween: 50,
-            },
-        }
+        // breakpoints: {
+        //     640: {
+        //       slidesPerView: 1.5,
+        //       spaceBetween: 20,
+        //     },
+        //     768: {
+        //       slidesPerView: 2,
+        //       spaceBetween: 40,
+        //     },
+        //     1024: {
+        //       slidesPerView: 3.5,
+        //       spaceBetween: 50,
+        //     },
+        // }
     });
+
+    //time to hide galery divs
+    document.getElementById("comun1-1").style.display = "none"; 
 
 }, false);
 
 
 function changeTo( current, next ){
-    console.log('CHANGING');
 
     let elmExit;
     let elmEnter;
+
+    console.log('Move from: ' + current + ', To: ' + next);
 
     //animate Exit
     switch (current) {
@@ -55,6 +54,14 @@ function changeTo( current, next ){
                 exitMethod( current, 'slide-out-left');
             break;
     
+        case 'comun1-1':
+                exitMethod( current, 'slide-in-right' );
+            break;
+
+        case 'comun1-2':
+                exitMethod( current, 'slide-in-right' );
+            break;
+
         default:
             break;
     }
@@ -62,30 +69,43 @@ function changeTo( current, next ){
     // animate -ENTER- 
     setTimeout(() => {
         switch (next) {
+            case 'home-div':
+                    enterMethod( next, 'slide-out-left');
+                break;
+
             case 'comun1-1':
+                    enterMethod( next, 'slide-in-right' );
+                break;
+
+            case 'comun1-2':
                     enterMethod( next, 'slide-in-right' );
                 break;
         }
     }, 400);
 
 
+
     function exitMethod( object, animation ){
         elmExit = document.getElementById(object);
+        // console.log('elm exit = ');
+        // console.log(elmExit)
         // elmExit.classList.add(animation);   
         setTimeout(() => {
             elmExit.style.display= 'none';
-            elmExit.classList.remove(animation);
+            // elmExit.classList.remove(animation);
         } , 300);
     }
 
     function enterMethod( object, animation){
         elmEnter = document.getElementById(object)
+        // console.log('elm enter = ');
+        // console.log(elmEnter);
         elmEnter.style.display= 'block';
         // elmEnter.classList.add(animation);    
 
         setTimeout(()=>{
             elmEnter.style.opacity = 1;
-            elmEnter.classList.remove(animation);
+            // elmEnter.classList.remove(animation);
         }, 300);     
     }
 }
