@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //time to hide galery divs
     document.getElementById("comun1-1").style.display = "none"; 
     document.getElementById("comun1-2").style.display = "none"; 
-    document.getElementById("comun1-3").style.display = "none"; 
+    // document.getElementById("comun1-3").style.display = "none"; 
 
 }, false);
 
@@ -69,6 +69,8 @@ function changeTo( current, next ){
 
     console.log('Move from: ' + current + ', To: ' + next);
 
+    stopAllVideos();
+
     //animate Exit
     switch (current) {
         case 'home-div':
@@ -76,15 +78,11 @@ function changeTo( current, next ){
             break;
     
         case 'comun1-1':
-                exitMethod( current, 'slide-in-right' );
+                exitMethod( current, 'slide-out-left' );
             break;
 
         case 'comun1-2':
-                exitMethod( current, 'slide-in-right' );
-            break;
-
-        case 'comun1-3':
-                exitMethod( current, 'slide-in-right' );
+                exitMethod( current, 'slide-out-left' );
             break;
 
         default:
@@ -95,7 +93,7 @@ function changeTo( current, next ){
     setTimeout(() => {
         switch (next) {
             case 'home-div':
-                    enterMethod( next, 'slide-out-left');
+                    enterMethod( next, 'slide-in-right');
                 break;
 
             case 'comun1-1':
@@ -105,23 +103,32 @@ function changeTo( current, next ){
             case 'comun1-2':
                     enterMethod( next, 'slide-in-right' );
                 break;
-
-            case 'comun1-3':
-                    enterMethod( next, 'slide-in-right' );
-                break;
         }
     }, 400);
 
+
+
+
+    function stopAllVideos(){
+        videoList = Array.prototype.slice.call(
+            document.getElementsByClassName("yVideo")
+        );
+        videoList.forEach(video => {
+            //-----------SUPER IMPORTANT TO ADD "?enablejsapi=1&version=3" IN EACH URL VIDEO SOURCE-------------
+            //without that parameter, this function doesn´t work
+            video.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+        });
+    }
 
 
     function exitMethod( object, animation ){
         elmExit = document.getElementById(object);
         // console.log('elm exit = ');
         // console.log(elmExit)
-        // elmExit.classList.add(animation);   
+        elmExit.classList.add(animation);   
         setTimeout(() => {
             elmExit.style.display= 'none';
-            // elmExit.classList.remove(animation);
+            elmExit.classList.remove(animation);
         } , 300);
     }
 
@@ -130,11 +137,11 @@ function changeTo( current, next ){
         // console.log('elm enter = ');
         // console.log(elmEnter);
         elmEnter.style.display= 'block';
-        // elmEnter.classList.add(animation);    
+        elmEnter.classList.add(animation);    
 
         setTimeout(()=>{
             elmEnter.style.opacity = 1;
-            // elmEnter.classList.remove(animation);
+            elmEnter.classList.remove(animation);
         }, 300);     
     }
 }
