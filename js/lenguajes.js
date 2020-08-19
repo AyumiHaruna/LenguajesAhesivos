@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //time to hide galery divs
     document.getElementById("comun1-1").style.display = "none"; 
     document.getElementById("comun1-2").style.display = "none"; 
+    document.getElementById("comun1-3").style.display = "none"; 
 
 }, false);
 
@@ -82,6 +83,10 @@ function changeTo( current, next ){
                 exitMethod( current, 'slide-in-right' );
             break;
 
+        case 'comun1-3':
+                exitMethod( current, 'slide-in-right' );
+            break;
+
         default:
             break;
     }
@@ -98,6 +103,10 @@ function changeTo( current, next ){
                 break;
 
             case 'comun1-2':
+                    enterMethod( next, 'slide-in-right' );
+                break;
+
+            case 'comun1-3':
                     enterMethod( next, 'slide-in-right' );
                 break;
         }

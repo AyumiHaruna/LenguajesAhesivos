@@ -1,18 +1,11 @@
-@font-face {
-    font-family: 'fresh_marker';
-    src: url('../webfonts/fresh_marker/freshmarker.ttf');
-}   
-@font-face {
-    font-family: 'take_cover';
-    src: url('../webfonts/take_cover/Take_cover.ttf');
-} 
+
 @font-face {
     font-family: 'montserrat';
-    src: url('../webfonts/montserrat/Montserrat-Medium.ttf');
+    src: url('../webfonts/montserrat/Montserrat-Regular.ttf');
 }
 @font-face {
-    font-family: 'tipo_jacksilver';
-    src: url('../webfonts/tipo_jacksilver/Jacksilver.ttf');
+    font-family: 'jacksilver';
+    src: url('../webfonts/jacksilver/Jacksilver.ttf');
 }
 
 body{
@@ -22,13 +15,12 @@ body{
     background-size: 4%;
 }
 
-
-
+ 
 .header{
     text-align: center;
     margin-top: 1vw;
     margin-bottom: 1vw;
-    padding-left: 5vw;
+    padding-left: 0vw;
 }
 .header img{
     width: 14%;
@@ -40,7 +32,7 @@ body{
         HOME DIV
 -------------------------------*/
 .home-div{
-    padding-left: 5vw;
+    padding-left: 3vw;
     text-align: center;
     /* display: none;
     opacity: 0; */
@@ -49,6 +41,14 @@ body{
     width: 85%;
     height: 80vh;
 }
+
+.home-div .videointro iframe{
+    width: 100%;
+    height: 80vh;
+}
+
+/* ----- logotipos ----- */
+
 .home-div .logo{
     margin-top: 2vw;
 }
@@ -56,7 +56,6 @@ body{
     width: 45%;
 }
 
-/* ----- logotipos ----- */
 .home-div .logoAyr{
     text-align: center;
     margin-top: 1vw;
@@ -67,13 +66,25 @@ body{
     width: 40%;
 }
 
-.home-div .descripcion{
-    /* font-family: 'tipo_jacksilver'; */
-    font-family: 'Montserrat';
+.home-div .intro{
+    text-align: center;
+    font-family: 'Jacksilver';
+    color: #bbbcbc; 
+    font-size: 6.5em;
+    margin-top: 1.2vw;
+    margin-bottom: 2vw;
+}
+
+.home-div .descripcion{ 
+    font-family: 'Montserrat-Regular';
     font-size: 1em;
     color: #ffffff;
     text-align: justify;
-    padding: 2.5vw 8vw;
+    padding: .5vw 1vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 
 .accion{
@@ -113,18 +124,20 @@ body{
 }
 .comun1-1 .titulo-seccion{
     text-align: center;
-    font-family: 'tipo_jacksilver';
+    font-family: 'Jacksilver';
     color: #bbbcbc; 
     font-size: 3.2em;
     margin-top: 1.2vw;
     margin-bottom: 2vw;
 }
+
 .comun1-1 .descripcion{
     font-family: 'Montserrat';
     font-size: 1em;
     color: #ffffff;
-    text-align: justify;
-    padding: 0 4vw;
+    text-align: justify; 
+    padding-right: 4vw;
+    padding-left: 10vw;
 }
 .comun1-1 .contenedor-foto{
     text-align: center;
@@ -167,6 +180,11 @@ body{
     text-align: center;
 }
 
+.comun1-1 .videohorizontal iframe{
+    width: 100%;
+    height: 100vh;
+}     
+
 
 
 /*-----------------------------
@@ -186,14 +204,23 @@ body{
 .comun1-2 .video iframe{
     width: 100%;
     height: 50vh;
-}     
+}
 
 .comun1-2 .titulo-seccion{
     text-align: center;
-    font-family: 'tipo_jacksilver';
+    font-family: 'jacksilver';
     color: #bbbcbc;
     font-size: 3.2em;
     margin-top: 1.2vw;
+    margin-bottom: 2vw;
+}
+
+.comun1-2 .entret{
+    text-align: center;
+    font-family: 'jacksilver';
+    color: #bbbcbc;
+    font-size: 3em;
+    margin-top: 2vw;
     margin-bottom: 2vw;
 }
 .comun1-2 .descripcion{
@@ -204,12 +231,14 @@ body{
     padding: 2 4vw;
 }
 .comun1-2 .contenedor-foto img{
+    text-align: center;
     width: 100%;
 }
 
 .exponentes_list {
     font-size: 1em;
-    color: #0000; /* texto de la tarjeta */
+    color: #0000; /* texto de la tarjeta */ 
+    padding-top: 1.75vw;
 }
 
     .exponentes_list #exponentesoneList {
@@ -243,7 +272,7 @@ body{
 .comun1-2 .gal_titulo{
     color: #ffbf00;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 2em;
     text-align: center;
     margin-top: 2vw;
     margin-bottom: 2vw;
@@ -279,16 +308,177 @@ body{
 /*-----------------------------
         SEMBLANZAS
 -------------------------------*/
-.semblanzas .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
+.comun1-2 .semblanzas .col-lg-3 {
+  /*margin-bottom: 1.5rem; */
+  text-align: center; 
 }
-.semblanzas h2 {
+
+.comun1-2 .semblanzas h2 {
   font-weight: 400;
+  color: #ffc107;
 }
-.semblanzas .col-lg-4 p {
+
+.comun1-2 .semblanzas .card {
+  font-size: 1em; 
+  background: transparent; 
+  border-color: #ffc107;
+  color: #ffff; 
+  margin-right: 1vw;
+}
+
+.comun1-2 .semblanzas .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
+  max-width: 18rem; 
+}
+
+.comun1-2 .carousell {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Carousell obtenido de https://codepen.io/kreigd/pen/ybYNoN */
+
+@media (min-width: 768px) {
+  /* show 5 items */
+  .carousel-inner .active,
+  .carousel-inner .active + .carousel-item,
+  .carousel-inner .active + .carousel-item,
+  .carousel-inner .active + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+  }
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none;
+  }
+
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}   
+
+/*-----------------------------
+        COMUN 1-3
+-------------------------------*/
+.comun1-3{
+    /* display: none; */
+    opacity: 0;
+    padding-left: 5vw;
+}
+.comun1-3 .logo{
+    text-align: center;
+}
+.comun1-3 .logo img{
+    width: 25%;
+}
+.comun1-3 .video iframe{
+    width: 100%;
+    height: 50vh;
+}
+
+.comun1-3 .sedes .col-lg-3 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  
+}
+.comun1-3 .sedes h2 {
+  font-weight: 400;
+  color: #ffc107;
+}
+.comun1-3 .sedes .card { 
+    font-family: 'Montserrat';
+    font-size: 1em;
+  background: transparent; 
+  color: #ffff; 
+  margin-right: 1vw;
+}
+  
+.comun1-3 .titulo-seccion{
+    text-align: center;
+    font-family: 'jacksilver';
+    color: #bbbcbc;
+    font-size: 3.2em;
+    margin-top: 1.2vw;
+    margin-bottom: 2vw;
+}
+.comun1-3 .descripcion{
+    font-family: 'Montserrat';
+    font-size: 1em;
+    color: #ffffff;
+    text-align: justify;
+    padding: 2 4vw;
+}
+
+.comun1-3 .accion{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffbf00;
+    text-align: center;
+}
+.comun1-3 .accion button{
+    border: none;
+    background: none;
+    margin: 1vw 1.5vw 2vw 1.5vw;
+    width: 80px;
+    height: 80px;
+}
+.comun1-3 .accion button img{
+    width: 85%;
 }
 /*-----------------------------
         FOOTER
