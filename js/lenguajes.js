@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // nucleo1.html functions
     var nucleo1 = document.getElementsByClassName("comun1-1");
     if (nucleo1 != undefined ){
-        // create both galleries
+        // create galleries
+        //first gallery
         var mySwipertest = new Swiper('.gallery_container', {
             // Optional parameters
             direction: 'horizontal',
@@ -44,22 +45,51 @@ document.addEventListener('DOMContentLoaded', function() {
                 disableOnInteraction: true,
             },
 
-            // breakpoints: {
-            //     640: {
-            //       slidesPerView: 1.5,
-            //       spaceBetween: 20,
-            //     },
-            //     768: {
-            //       slidesPerView: 2,
-            //       spaceBetween: 40,
-            //     },
-            //     1024: {
-            //       slidesPerView: 3.5,
-            //       spaceBetween: 50,
-            //     },
-            // }
+            breakpoints: {
+                320: {
+                    slidesPerView: 2.3,
+                  },
+                768: {
+                    slidesPerView: 4,
+                },
+                1024: {
+                     slidesPerView: 4.5,
+                },
+            }
         });
 
+        //semblanzas gallery
+        var mySwiperSemlanzas = new Swiper('.semblanzas_gal', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            centeredSlides: true,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.gal_sem_next',
+                prevEl: '.gal_sem_prev',
+            },
+    
+            autoplay: {
+                delay: 8000,
+                disableOnInteraction: true,
+            },
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.1,
+                  },
+                768: {
+                    slidesPerView: 2.1,
+                },
+                1024: {
+                     slidesPerView: 2.3,
+                },
+            }
+        });
+
+        //second gallery
         var mySecondSwiper = new Swiper('.gallery_container_second', {
             // Optional parameters
             direction: 'horizontal',
@@ -77,6 +107,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 delay: 8000,
                 disableOnInteraction: true,
             },
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.2,
+                  },
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                     slidesPerView: 3.5,
+                },
+            }
         });
 
         //hide second gallery
@@ -180,7 +222,6 @@ function changeTo( current, next ){
 
 //muestra pop-up con imagen seleccionada
 function showImage( sel ){
-    console.log(sel.dataset.content);
     let popUp = document.getElementById("picSelection");
     popUp.style.display = "block";
     let picSel = document.getElementById("picSelected");

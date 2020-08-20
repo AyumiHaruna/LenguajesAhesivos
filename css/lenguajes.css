@@ -4,6 +4,10 @@
     src: url('../webfonts/montserrat/Montserrat-Regular.ttf');
 }
 @font-face {
+    font-family: 'montserrat-bold';
+    src: url('../webfonts/montserrat/montserrat-bold.ttf');
+}
+@font-face {
     font-family: 'jacksilver';
     src: url('../webfonts/jacksilver/Jacksilver.ttf');
 }
@@ -97,6 +101,25 @@ body{
 .accion button img{
     width: 85%;
 }
+@media (max-width: 768px) { 
+    .accion{
+        margin-top: 6vw;
+    }
+    .accion button{
+        margin: 4vw 1.5vw 0 1.5vw;
+    }
+}
+@media (max-width: 576px) {
+    .accion{
+        margin-top: 12vw;
+    }
+    .accion button{
+        margin: 4vw 1.5vw 0 1.5vw;
+        width: 70px;
+        height: 70px;   
+    } 
+}
+
 
 /*-----------------------------
         PIC SELECTION
@@ -115,7 +138,6 @@ body{
     background:  #fff;
     border-radius: 5px;
     top: 3vw;
-    height: 90vh;
     text-align: center;
     padding: 2vw;
 }
@@ -135,9 +157,36 @@ body{
     opacity: 0.6;
 }
 .picSelection .picContainer #picSelected{
-    height: 100%;
+    max-height: 80vh;
     max-width: 100%;
     border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .picSelection .picContainer{
+        border-radius: 5px;
+        top: 10vw;
+        padding: 8vw 3vw;
+    }
+    .picSelection .picContainer #picSelected{
+        max-width: 90%;
+        border-radius: 10px;
+    }
+ }
+@media (max-width: 576px) { 
+    .picSelection .picContainer{
+        padding: 10vw 3vw 5vw 3vw;
+    }
+    .picSelection .picContainer #picSelected{
+        max-width: 95%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .picSelection #closePic{
+        font-size: 1.5em;
+        width: 50px;
+        height: 50px;
+    }   
 }
 
 /*-----------------------------
@@ -238,8 +287,8 @@ body{
         COMUN 1-1
 -------------------------------*/
 .comun1-1{
-    /* display: none; */
-    /* opacity: 0; */
+    /* display: none; 
+    opacity: 0; */
 }
 .comun1-1 .logo{
     text-align: center;
@@ -262,7 +311,7 @@ body{
     color: #ffffff;
     text-align: justify; 
     padding-right: 5vw;
-    padding-left: 7vw;
+    padding-left: 5vw;
 }
 .comun1-1 .descripcion .text-warning{
     font-size: 1.9em;
@@ -270,9 +319,10 @@ body{
 .comun1-1 .contenedor-foto{
     text-align: center;
 }
-.comun1-1 .contenedor-foto img{
-    margin-top: 10vw;
-    width: 90%;
+.comun1-1 .contenedor-foto iframe{
+    margin-top: 7vw;
+    width: 100%;
+    height: 45vw;
 }
 .comun1-1 .gal_titulo{
     color: #ffbf00;
@@ -312,6 +362,55 @@ body{
     width: 100%;
     height: 100vh;
 }     
+@media (max-width: 768px) { 
+    .comun1-1 .descripcion .text-warning{
+        font-size: 1.6em;
+    }
+    .comun1-1 .descripcion{
+        height: 40vh;
+        overflow-y: scroll;
+        padding-right: 10vw;
+        padding-left: 10vw;
+        font-size: .9em;
+    }
+    .comun1-1 .contenedor-foto iframe{
+        margin-top: -.5vw;
+        margin-bottom: 5vw;
+        width: 80%;
+        height: 45vw;
+    }
+    .comun1-1 .gal_titulo{
+        margin-bottom: 4vw;
+    }
+}
+@media (max-width: 576px) {
+    .comun1-1 .logo img{
+        width: 80%;
+    }
+    .comun1-1 .titulo-seccion{
+        font-size: 2em;
+        margin-bottom: 8vw;
+    }
+    .comun1-1 .descripcion .text-warning{
+        font-size: 1.3em;
+    }
+    .comun1-1 .descripcion{
+        height: 70vh;
+        padding-right: 10vw;
+        padding-left: 10vw;
+        font-size: .8em;
+    }
+    .comun1-1 .contenedor-foto iframe{
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        width: 90%;
+        height: 90vw;
+    }
+    .comun1-1 .gal_titulo{
+        font-size: 1.2em;
+        margin-bottom: 6vw;
+    }
+ }
 
 
 
@@ -327,13 +426,12 @@ body{
     text-align: center;
 }
 .comun1-2 .logo img{
-    width: 25%;
+    width: 30%;
 }
 .comun1-2 .video iframe{
     width: 100%;
     height: 50vh;
 }
-
 .comun1-2 .titulo-seccion{
     text-align: center;
     font-family: 'jacksilver';
@@ -342,37 +440,38 @@ body{
     margin-top: 1.2vw;
     margin-bottom: 2vw;
 }
-
-.comun1-2 .entret{
-    text-align: center;
-    font-family: 'jacksilver';
-    color: #bbbcbc;
-    font-size: 3em;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-}
 .comun1-2 .descripcion{
     font-family: 'Montserrat';
-    font-size: 1em;
-    color: #ffffff;
+    font-size: 1.9em;
     text-align: justify;
-    padding: 2 4vw;
+    padding: 2vw 4vw;
 }
-.comun1-2 .contenedor-foto img{
+.comun1-2 .descripcion .video iframe{
     text-align: center;
     width: 100%;
 }
+@media (max-width: 768px) {
+    .comun1-2 .video iframe{
+        width: 90%;
+        height: 45vh;
+    }
+} 
+@media (max-width: 576px) {
+    .comun1-2 .descripcion h2{
+        font-size: .8em;
+    }
+}
 
 .exponentes_list {
-    font-size: 1em;
+    font-size: .4em;
     color: #0000; /* texto de la tarjeta */ 
     padding-top: 1.75vw;
 }
-
-    .exponentes_list #exponentesoneList {
-        overflow: auto;
-        max-height: 30vw;
-    }
+.exponentes_list img{
+    position: absolute;
+    left: 3.5vw;
+    width: 1.6vw;
+}
     
 .exponentes_list .header_title {
     text-align: center;
@@ -380,29 +479,116 @@ body{
     color: #000000; /* texto del header de la lista*/
     font-size: 1.3em;
 }
-.exponentes_list img{
-    width: 10%;
-    margin-right: 0vw; 
-}
-.exponentes_list button{
-    font-family: 'Montserrat-bold';
-    font-size: 1em;
-    color: #ce8dff;
-}
 
 .exponentes_title {
-    font-family: 'Montserrat-bold';
-    text-align: center;
+    font-family: 'montserrat-bold';
+    text-align: right;
     font-size: 1.5em;
-    padding: 2vw;
+    padding: 1vw;
+}
+@media (max-width: 768px) {
+    .exponentes_list img{
+        position: absolute;
+        left: 6vw;
+        width: 2.4vw;
+    }
+} 
+@media (max-width: 576px) {
+    .exponentes_list img{
+        position: absolute;
+        left: 8vw;
+        width: 4vw;
+    }
+}
+
+/*-----------------------------
+        SEMBLANZAS
+-------------------------------*/
+.comun1-2 .semblanzas h2 {
+  font-weight: 400;
+  color: #ffc107;
+  margin: 5vw 0 2vw 0;
+}
+.comun1-2 .sem_bloque{
+    padding: 0 5vw;
+}
+.comun1-2 .sem_bloque .semblanzas_gal{
+    overflow: hidden;
+}
+.comun1-2 .sem_bloque .menu_car_btn{
+    position: absolute;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 2.5em;
+    top: 8vw;
+}
+.comun1-2 .sem_bloque .gal_sem_prev{
+    left: -3vw;
+}
+.comun1-2 .sem_bloque .gal_sem_next{
+    right: -2vw;
+}
+.comun1-2 .sem_bloque .swiper-slide{
+    margin: 1vw;
+    border: solid 2px #ffbf00;
+    padding: 1vw;
+}
+.comun1-2 .sem_bloque .swiper-slide h2{
+    font-size: .9em;
+}
+.comun1-2 .sem_bloque .swiper-slide .text-white{
+    font-size: .5em;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .comun1-2 .sem_bloque .menu_car_btn{
+        font-size: 2em;
+        top: 25vw;
+    }
+    .comun1-2 .sem_bloque .gal_sem_prev{
+        left: -3vw;
+    }
+    .comun1-2 .sem_bloque .gal_sem_next{
+        right: -3vw;
+    }
+
+    .comun1-2 .sem_bloque .swiper-slide h2{
+        font-size: .6em;
+    }
+    .comun1-2 .sem_bloque .swiper-slide .text-white{
+        font-size: .45em;
+    }
+}
+@media (max-width: 576px) {
+    .comun1-2 .sem_bloque{
+        padding: 0 3vw;
+    }
+    .comun1-2 .sem_bloque .menu_car_btn{
+        font-size: .5em;
+        top: 25vw;
+    }
+    .comun1-2 .sem_bloque .gal_sem_prev{
+        left: -5vw;
+    }
+    .comun1-2 .sem_bloque .gal_sem_next{
+        right: -5vw;
+    }
+
+    .comun1-2 .sem_bloque .swiper-slide h2{
+        font-size: .6em;
+    }
+    .comun1-2 .sem_bloque .swiper-slide .text-white{
+        font-size: .35em;
+    }
 }
 
 .comun1-2 .gal_titulo{
     color: #ffbf00;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.4em;
     text-align: center;
-    margin-top: 2vw;
     margin-bottom: 2vw;
 }
 .comun1-2 .gal_bloque{
@@ -416,7 +602,7 @@ body{
     background: none;
     color: #fff;
     border: none;
-    font-size: 2.5em;
+    font-size: 3em;
     top: 6vw;
 }
 .comun1-2 .gal_bloque .gal_sec_car_prev{
@@ -425,191 +611,32 @@ body{
 .comun1-2 .gal_bloque .gal_sec_car_next{
     right: 3vw;
 }
-.comun1-2 .gallery_container .swiper-slide{
-    /* background: #bbbcbc; */
-    /* width: 300px; */
+.comun1-2 .gal_bloque .swiper-slide{
     margin: 1vw;
-    text-align: center;
+    padding: 1vw;
 }
-
-
-/*-----------------------------
-        SEMBLANZAS
--------------------------------*/
-.comun1-2 .semblanzas .col-lg-3 {
-  /*margin-bottom: 1.5rem; */
-  text-align: center; 
+.comun1-2 .gal_bloque .swiper-slide img{
+    height: 200px;
+    width: 200px;
 }
-
-.comun1-2 .semblanzas h2 {
-  font-weight: 400;
-  color: #ffc107;
+@media (max-width: 768px) {
+    .comun1-2 .gal_bloque .swiper-slide img{
+        height: 180px;
+        width: 180px;
+    }
 }
-
-.comun1-2 .semblanzas .card {
-  font-size: 1em; 
-  background: transparent; 
-  border-color: #ffc107;
-  color: #ffff; 
-  margin-right: 1vw;
+@media (max-width: 576px) {
+    .comun1-2 .gal_bloque .menu_car_btn{
+        font-size: 2em;
+    }
+    .comun1-2 .gal_bloque .gal_sec_car_prev{
+        left: -3vw;
+    }
+    .comun1-2 .gal_bloque .gal_sec_car_next{
+        right: -2vw;
+    }
+    .comun1-2 .gal_bloque .swiper-slide img{
+        height: 150px;
+        width: 150px;
+    }
 }
-
-.comun1-2 .semblanzas .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-  max-width: 18rem; 
-}
-
-.comun1-2 .carousell {
-    width: 100%;
-    height: 100vh;
-}
-
-
-
-
-/* Carousell obtenido de https://codepen.io/kreigd/pen/ybYNoN
-
-@media (min-width: 768px) {
-  /* show 5 items */
-  .carousel-inner .active,
-  .carousel-inner .active + .carousel-item,
-  .carousel-inner .active + .carousel-item,
-  .carousel-inner .active + .carousel-item,
-  .carousel-inner .active + .carousel-item + .carousel-item {
-    display: block;
-  }
-
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
-    transition: none;
-  }
-
-  .carousel-inner .carousel-item-next,
-  .carousel-inner .carousel-item-prev {
-    position: relative;
-    transform: translate3d(0, 0, 0);
-  }
-
-  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-    position: absolute;
-    top: 0;
-    right: -33.3333%;
-    z-index: -1;
-    display: block;
-    visibility: visible;
-  }
-
-  /* left or forward direction */
-  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-  .carousel-item-next.carousel-item-left + .carousel-item,
-  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
-    position: relative;
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-
-  /* farthest right hidden item must be abso position for animations */
-  .carousel-inner .carousel-item-prev.carousel-item-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    display: block;
-    visibility: visible;
-  }
-
-  /* right or prev direction */
-  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-  .carousel-item-prev.carousel-item-right + .carousel-item,
-  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
-    position: relative;
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-    display: block;
-    visibility: visible;
-  }
-}    */
-
-/*-----------------------------
-        COMUN 1-3
--------------------------------*/
-.comun1-3{
-    /* display: none; */
-    opacity: 0;
-    padding-left: 5vw;
-}
-.comun1-3 .logo{
-    text-align: center;
-}
-.comun1-3 .logo img{
-    width: 25%;
-}
-.comun1-3 .video iframe{
-    width: 100%;
-    height: 50vh;
-}
-
-.comun1-3 .sedes .col-lg-3 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-  
-}
-.comun1-3 .sedes h2 {
-  font-weight: 400;
-  color: #ffc107;
-}
-.comun1-3 .sedes .card { 
-    font-family: 'Montserrat';
-    font-size: 1em;
-  background: transparent; 
-  color: #ffff; 
-  margin-right: 1vw;
-}
-  
-.comun1-3 .titulo-seccion{
-    text-align: center;
-    font-family: 'jacksilver';
-    color: #bbbcbc;
-    font-size: 3.2em;
-    margin-top: 1.2vw;
-    margin-bottom: 2vw;
-}
-.comun1-3 .descripcion{
-    font-family: 'Montserrat';
-    font-size: 1em;
-    color: #ffffff;
-    text-align: justify;
-    padding: 2 4vw;
-}
-
-.comun1-3 .accion{
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    font-family: 'Montserrat';
-    font-size: 1em;
-    font-weight: bold;
-    color: #ffbf00;
-    text-align: center;
-}
-.comun1-3 .accion button{
-    border: none;
-    background: none;
-    margin: 1vw 1.5vw 2vw 1.5vw;
-    width: 80px;
-    height: 80px;
-}
-.comun1-3 .accion button img{
-    width: 85%;
-}
-
-
