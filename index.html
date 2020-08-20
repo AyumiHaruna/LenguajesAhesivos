@@ -1,66 +1,54 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <title> ComunSticker: Lenguajes Adhesivos | Alas y Raíces </title>
-    <!-- Favico -->
-          <link rel="icon" type="image/png" href="https://www.alasyraices.gob.mx/img/favico2.png">
-         
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139317831-1">
-          </script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'UA-139317831-1');
-            </script>
 
-    <!-- botstrap -->
+    <!-- Favico -->
+        <link rel="icon" type="image/png" href="https://www.alasyraices.gob.mx/img/favico2.png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139317831-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-139317831-1');
+        </script>
+    
+    <!-- bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <!-- Carousel Swiper -->
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- fontAwesome -->
-        <script src="https://kit.fontawesome.com/035f9caf7c.js" crossorigin="anonymous"></script>
-
+    
     <!-- page style -->
         <link rel="stylesheet" href="css/animista.css">
         <link rel="stylesheet" href="css/lenguajes.css">
 </head>
 <body>
-    <div class="container-fluid home-div">
+    <div class="container-fluid">
         <!-- header alas y raices -->
         <section>
             <div class="row">
-                <div class="col-lg-4">
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 logoAyr">
+                <div class="col-12 header">
                     <a href="http://www.alasyraices.gob.mx">
                     <img src="img/logoAyr.png" alt="Logo de Alas y Raíces"></a>
-                </div>
-                <div class="col-4">
                 </div>
             </div>
         </section>
 
-        <!-- sección plantillas -->
         <section>
-            <div class="row"> 
-                <!-- home div-->
-                <div class="col-12 home-div" id="home-div">
+            <div class="row">
+                <div class="col-12 home-div slide-in-top" id="home-div">
                     <div class="row">
                         <div class="col-12">
                             <!-- Video introductorio-->
                             <iframe class="yVideo" width="560" height="315" src="https://www.youtube.com/embed/yRzdOgxiTpk?enablejsapi=1&version=3" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <div class="col-12 logo">
+                        <!-- <div class="col-12 logo">
                             <img src="img/logoComunSticker.png" alt="Logo de Comun Sticker">
-                        </div>
+                        </div> -->
                         <div class="col-12 descripcion">
                             COMUN-STICKER es una exposición digital que pretende reconocer el valor comunicativo del sticker en México, visibilizando parte de la evolución de su historia como un proceso de construcción de la práctica y el concepto a través del tiempo; evidenciando los procesos creativos de elaboración y las redes que genera en la práctica como vehículos de interacción e intercambio cultural.
                             <br>
@@ -68,386 +56,40 @@
                             <br>
                             <br>COMUN-STICKER WEB es parte medular del proyecto y tiene la doble función de ser un espacio que profundiza en los temas relacionados con la exposición y las sedes que la albergan, así como de ser una plataforma temporal receptora de toda la exposición.
                         </div>
-                        <div class="col-12 accion">
-                            <div>
-                                CONTINÚA EL RECORRIDO
-                            </div>
-                            <div>
-                                <button class="pulsate-bck" onClick="changeTo('home-div', 'comun1-1')">
-                                    <img src="img/go.png" alt="boton siguiente">
-                                </button>
-                            </div>                            
-                        </div>
-                    </div>
-                </div>
-
-                <!-- comun1-1 -->
-                <div class="col-12 comun1-1" id="comun1-1">
-                    <div class="row">
-                        <div class="col-12 logo">
-                            <img src="img/logoComunPleca.png" alt="logo comun-sticker">
-                        </div>
-                        <div class="col-lg-12 text-center titulo-seccion">
-                            Núcleo 1: Común-relato
-                        </div>
-                        <div class="col-7 descripcion">
-                            <h2 class="text-warning">INICIOS DEL STICKER URBANO EN MÉXICO</h2>
-                            <br>No se sabe a ciencia cierta quiénes y cuándo introdujeron el sticker urbano a México. Lo que se sabe es que los precursores de este arte comenzaron a trabajar en la década de los años noventa y poco a poco, ya sea por imitación, por invitación o simplemente porque les pareció buena idea, muchos artistas comenzaron a dedicarse a él.
-                            <br>
-                            <br>Sin embargo, la historia del sticker urbano no ha sido lineal, ha tenido altibajos: épocas gloriosas donde la ciudad entera fue tapizada con diversos stickers y épocas en las que muchos exponentes abandonaron esta actividad. Felizmente, podemos decir que al día de hoy, este arte se encuentra en un gran momento.
-                            <br>
-                            <br>Llegados a este punto, surgen muchas preguntas: ¿Qué es el sticker urbano? ¿Para qué sirve? ¿Por qué es importante? ¿Es arte? Muchas personas se han planteado esta pregunta, sin embargo, no hay respuestas concluyentes. 
-                            <br>
-                            <br>El sticker surgió vinculado al comercio de frutas y, posteriormente, en los años setenta, comenzó a utilizarse en Estados Unidos como un medio de expresión. Se sabe que los primeros stickers urbanos fueron utilizados por los grafiteros que buscaban una manera rápida de extender sus pintas y no ser detenidos por la policía. 
-                            <br>
-                            <br>Posteriormente, los stickers urbanos se separaron para constituir una rama independiente del grafiti, aunque en algunos casos, todavía hay vasos comunicantes. El sticker urbano puede ser solo una imagen, una palabra, una frase, pero la mayoría de las veces llega para quedarse en la mente.
-                            <br>
-                            <br>
-                            Invade la ciudad, pero más aún invade el pensamiento y se queda ahí, fugaz o permanentemente, incomodando y cuestionando. Cualquier persona puede estar detrás del sticker y al final es irrelevante quién lo haga, cuál es la edad o condición social de su creador, lo importante es la huella que deja. La propia calle es su mejor juez.
-                            <br>
-                            <br>¿Puede ser arte algo que sólo se pega en las calles, sin mayor razón que el hacerlo? Si, de hecho es el arte que representa a nuestro tiempo. Como decía Zigmunt Bauman, respecto a los artistas urbanos franceses: “estos artistas de la era líquido-moderna (…) se centran en acontecimientos pasajeros: acontecimientos de los que, de entrada, se sabe que serán efímeros.
-                            <br>
-                            <br>Saben que el arte como acontecimiento, no ya el arte como obra, concluirá pronto (…) Crean obras que quedarán expuestas a las inclemencias del tiempo y que acabarán desintegrándose. Intencionadamente, trabajan con materiales frágiles (…), a diferencia de los artistas de antes que buscaban los secretos de los tintes y de los materiales para que sus obras perduraran eternamente”.
-                            <br>
-                            <br>No hay mejor representante de estos tiempos, de nuestra generación y de nuestra época que los artistas del sticker urbano. Sus obras podrán ser efímeras, durar años o unos minutos, pero sus imágenes ya se encuentran en nuestras mentes y, tal vez ahí, durarán por siempre. 
-                            <br>                                    
-                            <br><b>Carlos Gorbea</b>
-                            <br><p class="lead">Stickers en México</p>
-                            <br>
-                            <br> 
-                        </div>
-                        <div class="col-5 contenedor-foto">
-                            <img src="img/foto1.jpg" alt="Un joven estickero anónimo sostiene frente a su rostro una estampa adherible del tamaño de la palma de su mano, que muestra una calavera humana con una llama de fuego en lugar de ojos, rodeada por las líneas y glifos que representan el calendario azteca, dibujada con tinta negra.">
-                        </div>
-
-                        <!-- Galería UNO --> 
-                        <div class="col-12 gal_titulo">
-                            GALERÍA
-                        </div>
-                        <div class="col-12 gal_bloque">
-                            <button class="gal_car_prev menu_car_btn"> <i class="fas fa-chevron-left"></i> </button>
-                            <button class="gal_car_next menu_car_btn"> <i class="fas fa-chevron-right"></i> </button>                            
-
-                            <!-- Slider main container -->
-                            <div class="gallery_container">
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper">
-                                    <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <a href="img/comunsticker/guno/ACAMONCHI.png" target="_blank" class="d-block mb-4 h-100">
-                                            <img class="img-fluid img-thumbnail" src="img/comunsticker/guno/v-acamonchi.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/comunsticker/guno/CHARRITOS.png" target="_blank" class="d-block mb-4 h-100">
-                                            <img class="img-fluid img-thumbnail" src="img/comunsticker/guno/v-charritos.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/comunsticker/guno/REMI.png" target="_blank" class="d-block mb-4 h-100">
-                                            <img class="img-fluid img-thumbnail" src="img/comunsticker/guno/v-remi.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/comunsticker/guno/SOK.png" target="_blank" class="d-block mb-4 h-100">
-                                            <img class="img-fluid img-thumbnail" src="img/comunsticker/guno/v-sok.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/comunsticker/guno/TWELVE.png" target="_blank" class="d-block mb-4 h-100">
-                                            <img class="img-fluid img-thumbnail" src="img/comunsticker/guno/v-twelve.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/comunsticker/guno/ZTEP.png" target="_blank" class="d-block mb-4 h-100">
-                                            <img class="img-fluid img-thumbnail" src="img/comunsticker/guno/v-ztep.png" alt="">
-                                        </a>
-                                    </div>
+                        <div class="col-12 botonera">
+                            <div class="row">
+                                <div class="col-12 title">
+                                    ELIGE UN NÚCLEO
+                                </div>                   
+                                <div class="col-md-3 col-6 path">
+                                    <a href="nucleo1.html">
+                                        <img class="pathImg" src="img/iconoNucleo1.png" alt="Enlace a núcleo 1">
+                                        <br>
+                                        <p>Núcleo 1</p>
+                                    </a>                                    
                                 </div>
-                            </div>     
-                        </div>
-                        <!--/.Galería UNO -->  
-                        <div class="col-12 accion">
-                            <div>
-                                CONTINÚA EL RECORRIDO
-                            </div>
-                            <div>
-                                <button class="pulsate-bck" onClick="changeTo('comun1-1', 'home-div')">
-                                    <img src="img/back.png" alt="boton siguiente">
-                                </button>
-
-                                <button class="pulsate-bck" onClick="changeTo('comun1-1', 'comun1-2')">
-                                    <img src="img/go.png" alt="boton siguiente">
-                                </button>
-                            </div>                            
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- comun1-2 -->
-                <div class="col-12 comun1-2" id="comun1-2"> 
-                    <div class="row">
-                        <div class="col-12 logo">
-                            <img src="img/logoComunPleca.png" alt="Logo de Comun Sticker sin el subtítulo">
-                        </div> 
-                        <div class="col-12 titulo-seccion">
-                            Núcleo 1: Común-relato
-                        </div>
-                        
-                        <div class="col-lg-12 col-md-12 col-sm-12 text-center descripcion text-warning"> 
-                            <h1>¿Qué es para ti el sticker?</h1> 
-                        </div>
-                        <div class="col-12 video">
-                            <iframe class="yVideo" width="560" height="315" src="https://www.youtube.com/embed/ZeOc3lqsDlY?enablejsapi=1&version=3" frameborder="0" allowfullscreen></iframe>
-                            <br>
-                            <br>
-                        </div>
-                        <!-- Videos de los EXPONENTES -->
-                        <div class="col-12 text-warning text-center descripcion">
-                            <br>
-                            <h1>EXPONENTES</h1>
-                            <div class="container video">
-                                <div class="row">
-                                    <div class="col-lg-8"> 
-                                        <!-- VIDEO de los exponentes -->
-                                        <iframe class="yVideo" id="exponentes_video_player" src="https://www.youtube.com/embed/_m11M2Otd9o?enablejsapi=1&version=3" frameborder="0" allowfullscreen></iframe> 
-                                        <hr> 
-                                    </div>
-
-                                    <!-- LISTA DE REPRODUCCIÓN DE VIDEO -->
-                                    <div class="col-lg-4 exponentes_list text-black">
-                                        <div class="btn btn-block card-header header_title" type="button" data-toggle="collapse" data-target="#exponentesoneList" aria-expanded="true" onclick="changeVideo( 1 )">
-                                            <img src="img/comunsticker/btn.png" alt=""> ACAMONCHI 
-                                        </div>
-                                        
-                                        <div class="btn btn-block card-header header_title" type="button" data-toggle="collapse" data-target="#exponentesoneList" aria-expanded="true" onclick="changeVideo( 2 )">
-                                            <img src="img/comunsticker/btn.png" alt=""> CHARRITOS  
-                                        </div>
-
-                                        <div class="btn btn-block card-header header_title" type="button" data-toggle="collapse" data-target="#exponentesoneList" aria-expanded="true" onclick="changeVideo( 3 )">
-                                            <img src="img/comunsticker/btn.png" alt=""> REMS  
-                                        </div>
-                                        
-                                        <div class="btn btn-block card-header header_title" type="button" data-toggle="collapse" data-target="#exponentesoneList" aria-expanded="true" onclick="changeVideo( 4 )">
-                                            <img src="img/comunsticker/btn.png" alt=""> SOK
-                                        </div>
-                                        
-                                        <div class="btn btn-block card-header header_title" type="button" data-toggle="collapse" data-target="#exponentesoneList" aria-expanded="true" onclick="changeVideo( 5 )">
-                                            <img src="img/comunsticker/btn.png" alt=""> ZTEP
-                                        </div>
-
-                                        <div class="btn btn-block card-header header_title" type="button" data-toggle="collapse" data-target="#exponentesoneList" aria-expanded="true" onclick="changeVideo( 6 )">
-                                            <img src="img/comunsticker/btn.png" alt=""> TWELVE
-                                        </div>
-                                    </div> 
+                                <div class="col-md-3 col-6 path">
+                                    <a href="nucleo2.html">
+                                        <img class="pathImg" src="img/iconoNucleo2.png" alt="Enlace a núcleo 2">
+                                        <br>
+                                        <p>Núcleo 2</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6 path">
+                                    
+                                        <img class="" src="img/iconoNucleoOff3.png" alt="Enlace a núcleo 3">
+                                        <br>
+                                        <p>Núcleo 3</p>
+                                                                 
+                                </div>
+                                <div class="col-md-3 col-6 path">
+                                    
+                                        <img class="" src="img/iconoNucleoOff4.png" alt="Enlace a núcleo 4">
+                                        <br>
+                                        <p>Núcleo 4</p>
+                                                           
                                 </div>
                             </div>
-                            <!--/. Videos de los EXPONENTES -->
-
-                            <!-- SEMBLANZAS -->
-                            <div class="container border-warning text-center semblanzas">
-                                <br>
-                                <h1>SEMBLANZAS</h1>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 text-center semblanzas text-justify text-warning"> 
-                                <div class="row">
-                                    <!-- 1Acamonchi-->
-                                    <div class="col-lg-3 col-md-4 col-sm-8 mb-4 card h-100 bg-transparent border-warning" style="max-width: 18rem;"> 
-                                        <a href="img/comunsticker/semblanzas/sACAMONCHI.png">
-                                            <img src="img/comunsticker/semblanzas/vACAMONCHI.png" alt="">
-                                        </a> 
-                                        <h2>1.  Gerardo Yepiz <small>(Acamonchi Art Studio)</small></h2>
-                                        <p class="text-white">
-                                            Artista con amplia trayectoria en el movimiento urbano. Nació en Ensenada, Baja California.  Desde sus inicios, a finales de los años 80, hasta la actualidad, se ha convertido en un referente dentro del panorama artístico urbano. Al día de hoy es un reconocido diseñador y artista urbano, quien ha llevado su proceso creativo por distintas vertientes. “Acamonchi” es una palabra común en Ensenada, y se usa para nombrar el juego popular de “cargar sobre los hombros” o “caballito”. 
-                                        </p>
-                                        
-                                        <p>
-                                            <a href="https://www.facebook.com/acamonchi.art">
-                                                <img src="img/comunsticker/social/i_FB.png" alt="facebook">
-                                            </a>
-                                            <a href="https://twitter.com/Acamonchi">
-                                                <img src="img/comunsticker/social/i_TW.png" alt="twitter">
-                                            </a>
-                                            <a href="https://www.instagram.com/acamonchi/">
-                                                <img src="img/comunsticker/social/i_IN.png" alt="instagram">
-                                            </a>
-                                            <a href="https://www.youtube.com/user/acamonchi06">
-                                                <img src="img/comunsticker/social/i_YT.png" alt="youtube">
-                                            </a>
-                                        </p>
-                                    </div>
-                                    <!-- /.1Acamonchi -->
-
-                                    <!-- 2Charritos-->
-                                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 card bg-transparent border-warning" style="max-width: 18rem;">
-                                        <a href="img/comunsticker/semblanzas/sCHARROS.png">
-                                            <img src="img/comunsticker/semblanzas/vCHARROS.png" alt="">
-                                        </a>
-                                        <h2>2.  Charritos</h2>
-                                        <p class="text-white">
-                                            Lo representa una imagen de charro con el rostro de Zapata y cuerpo de Villa. Su presencia en el espacio urbano comenzó a mediados de los 90, y desde entonces ha sido fiel a su estilo y técnica, convirtiéndose así en un ícono de la calle. Es un exponente que no ve límites en las adversidades y sobre todo está comprometido con la difusión y el conocimiento del sticker; tanto que se le conoce por innovar e interactuar en actividades como intercambios, combos e intervenciones.
-                                        </p>
-                                        <p>
-                                            <a href="https://www.facebook.com/CharritoSoundsystem">
-                                                <img src="img/comunsticker/social/i_FB.png" alt="facebook personal">
-                                            </a>
-                                            <a href="https://www.facebook.com/hoja.urbana.Oficial">
-                                                <img src="img/comunsticker/social/i_FB.png" alt="facebook Hoja Urbana">
-                                            </a>
-                                            <a href="https://www.instagram.com/charritosdelacalle/">
-                                                <img src="img/comunsticker/social/i_IN.png" alt="instagram">
-                                            </a>
-                                            <a href="https://www.youtube.com/user/charritosmuertos">
-                                                <img src="img/comunsticker/social/i_YT.png" alt="youtube">
-                                            </a>
-                                        </p>
-                                    </div>
-                                    <!-- /.2Charritos -->
-                                    
-                                    <!-- 3Ztep-->
-                                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 card bg-transparent border-warning" style="max-width: 18rem;">
-                                        <a href="img/comunsticker/semblanzas/sZTEP.png">
-                                            <img src="img/comunsticker/semblanzas/vZTEP.png" alt="">
-                                        </a>
-                                        <h2>3.  Ztep</h2>
-                                        <p class="text-white">
-                                            Se consolidó como referencia del sticker en el 2005 gracias a la difusión masiva de su diseño en la CDMX. El anonimato ha marcado su camino, pero “Dejar marca” es parte de su lema. Su interés se centra en generar inquietud en la sociedad a través de la permanencia de la imagen en el espacio público. “Lo que yo buscaba era romperle la vida cotidiana a la gente, que vieran un ícono que les llamara la atención y se cuestionaran el por qué de esa imagen”; experiencia relatada en Stickers DF.
-                                        </p>
-                                        <p>
-                                            <a href="https://www.instagram.com/ztepztepztep/">
-                                                <img src="img/comunsticker/social/i_IN.png" alt="instagram">
-                                            </a>
-                                        </p>
-                                    </div>
-                                    <!-- /.3Ztep -->
-                                    
-                                    <!-- 4Sok -->
-                                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 card bg-transparent border-warning" style="max-width: 18rem;">
-                                        <a href="img/comunsticker/semblanzas/sSOK.png">
-                                            <img src="img/comunsticker/semblanzas/vSok.png" alt="">
-                                        </a>
-                                        <h2>4.  Sok </h2>
-                                        <p class="text-white">
-                                            Con 18 años de trayectoria, ha vivido los cambios más notables en el sticker. Es uno de los exponentes que no ve límites en el diseño y la producción, además de ser fácilmente adaptable a los materiales y  los contextos. Sus propuestas dan un toque de humor a los espacios públicos, produciendo diseños que aluden al contexto social y político. Optó por el sticker como una forma de continuar interviniendo el espacio público sin la complejidad o el peligro de ser descubierto.
-                                        </p>
-                                        <p> 
-                                            <a href="https://www.instagram.com/esesesok/">
-                                                <img src="img/comunsticker/social/i_IN.png" alt="instagram">
-                                            </a>
-                                        </p>
-                                    </div>
-                                    <!-- /.4Sok -->
-                                    
-                                    <!-- 5Rems -->
-                                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 card bg-transparent border-warning" style="max-width: 18rem;">
-                                        <a href="img/comunsticker/semblanzas/sREMS.png">
-                                            <img src="img/comunsticker/semblanzas/vREMS.png" alt="">
-                                        </a>
-                                        <h2>5.  Rems</h2>
-                                        <p class="text-white">
-                                            Una de las primeras mujeres que formaron parte de los precursores del  movimiento del sticker en México; su singular diseño recorrió las calles desde el año 2001, fecha en la que mantenía un perfil activo dentro de la comunidad; y aunque por un tiempo pausó su proyecto, lo retomó a partir del 2017 en conjunto con otras técnicas del arte urbano, como el cartel, donde diseña imágenes de gatos (como parte de su figura emblemática) y grafitis –con bombas-.
-                                        </p>
-                                        <p>
-                                            <a href="https://www.facebook.com/remgirlwalkin">
-                                                <img src="img/comunsticker/social/i_FB.png" alt="facebook">
-                                            </a> 
-                                            <a href="https://www.instagram.com/remremcamina/">
-                                                <img src="img/comunsticker/social/i_IN.png" alt="instagram">
-                                            </a> 
-                                        </p>
-                                    </div>
-                                    <!-- /.5Rems -->
-                                    
-                                    <!-- 6TwelveEyes -->
-                                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 card bg-transparent border-warning" style="max-width: 18rem;">
-                                        <a href="img/comunsticker/semblanzas/sTWELVE.png">
-                                            <img src="img/comunsticker/semblanzas/vTWELVE.png" alt="">
-                                        </a>
-                                        <h2>6.  Twelve Eyes </h2>
-                                        <p class="text-white">
-                                            Pionero en el sticker, ha formado parte de la evolución del movimiento, interviniendo el espacio  público de múltiples maneras. En conjunto con Fize y Ztep formó “DDD”; Flavio Montesoro los describe con las siguientes palabras: “..los tres pegando su logo impreso con serigrafía sobre un papel bond; TWELVE tenía su propia forma de referirse a estas DDD: Delirando, Destruyendo y Devastando”.
-                                        </p>
-                                        <p>
-                                            <a href="https://www.instagram.com/twelstreets/">
-                                                <img src="img/comunsticker/social/i_IN.png" alt="instagram">
-                                            </a>
-                                        </p>
-                                    </div>
-                                    <!-- /.6TwelveEyes -->
-                                </div>
-                            </div>
-                            <!--/.SEMBLANZAS -->
-                        </div>
-                    
-                        <!-- VideoReto -->
-                        <div class="col-lg-12 col-md-12 col-sm-12 text-center descripcion text-warning">
-                            <br>
-                            <br>
-                            <h1>Te reto a… Buscar stickers</h1> 
-                            <div class="col-12 video">
-                                <iframe class="yVideo" width="560" height="315" src="https://www.youtube.com/embed/o3jf7qvDvWo?enablejsapi=1&version=3" frameborder="0" allowfullscreen></iframe>
-                                <br>
-                            </div>
-                        </div>
-                        <!-- VideoReto -->
-
-                        <!-- Galería DOS --> 
-                        <div class="col-12 gal_titulo">
-                            Señaléticas intervenidas
-                        </div>
-                        <div class="col-12 gal_bloque">
-                            <button class="gal_sec_car_prev menu_car_btn"> <i class="fas fa-chevron-left"></i> </button>
-                            <button class="gal_sec_car_next menu_car_btn"> <i class="fas fa-chevron-right"></i> </button>             
-                            
-                            <!-- Slider main container -->
-                            <div class="gallery_container_second">
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper">
-                                    <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <a href="img/comunsticker/gdos/ACAMONCHI_web.png" target="_blank" class="d-block mb-4 h-100">
-                                            <img class="img-fluid img-thumbnail" src="img/comunsticker/gdos/vACAMONCHI_web.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/comunsticker/gdos/Charros_web.png" target="_blank" class="d-block mb-4 h-100">
-                                            <img class="img-fluid img-thumbnail" src="img/comunsticker/gdos/vCharros_web.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/comunsticker/gdos/Rems_web.png" target="_blank" class="d-block mb-4 h-100">
-                                            <img class="img-fluid img-thumbnail" src="img/comunsticker/gdos/vRems_web.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/comunsticker/gdos/Sok_web.png" target="_blank" class="d-block mb-4 h-100">
-                                            <img class="img-fluid img-thumbnail" src="img/comunsticker/gdos/vSok_web.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/comunsticker/gdos/Twelve_web.png" target="_blank" class="d-block mb-4 h-100">
-                                            <img class="img-fluid img-thumbnail" src="img/comunsticker/gdos/vTwelve_web.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/comunsticker/gdos/Ztep_web.png" target="_blank" class="d-block mb-4 h-100">
-                                            <img class="img-fluid img-thumbnail" src="img/comunsticker/gdos/Ztep_web.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>     
-                        </div>
-                        <!--/.Galería DOS --> 
-
-                        <div class="col-12 accion">
-                            <div>
-                                REGRESAR
-                            </div>
-                            <div>
-                                <button class="pulsate-bck" onClick="changeTo('comun1-2', 'comun1-1')">
-                                    <img src="img/back.png" alt="boton anterior">
-                                </button>
-                            </div>                            
                         </div>
                     </div>
                 </div>
@@ -457,26 +99,24 @@
         <!-- footer -->
         <section>
             <div class="row footer">
-                <div class="col-4">        
+                <div class="col-md-4 col-12">        
                     <a href="http://" target="_blank">
                         <img src="img/dgvc.png" alt="Logo de Dirección General Vinculación Cultural">
                     </a>                           
                 </div>
-                <div class="col-4">               
+                <div class="col-md-4 col-12">               
                     <a href="http://" target="_blank">
                         <img src="img/logoAyrBlanco.png" alt="Logo de Alas y Raíces">
                     </a>
                 </div>
-                <div class="col-4">               
+                <div class="col-md-4 col-12">               
                     <a href="http://" target="_blank">
                         <img src="img/logoCultura.png" alt="Logo de Secretaría de Cultura">
                     </a>
                 </div>
             </div>
         </section>
-    </div>    
+    </div>
 </body>
 <script src="js/lenguajes.js"></script>
-<script src="js/exponentes.js"></script>
-<script src="js/Data/exponentesone_data.js"></script>
 </html>

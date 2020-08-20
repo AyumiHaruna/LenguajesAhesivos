@@ -5,6 +5,9 @@
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
+ /* ----------------------------------------------
+                ATTENTION ANIMATIONS
+ * ---------------------------------------------- */
 .pulsate-bck {
 	-webkit-animation: pulsate-bck 1s ease-in-out infinite both;
 	        animation: pulsate-bck 1s ease-in-out infinite both;
@@ -38,6 +41,103 @@
 }
 }
 
+.jello-horizontal {
+	-webkit-animation: jello-horizontal 0.5s both;
+        animation: jello-horizontal 0.5s both;
+}
+@-webkit-keyframes jello-horizontal {
+        0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                        transform: scale3d(1, 1, 1);
+        }
+        30% {
+                -webkit-transform: scale3d(1.25, 0.75, 1);
+                        transform: scale3d(1.25, 0.75, 1);
+        }
+        40% {
+                -webkit-transform: scale3d(0.75, 1.25, 1);
+                        transform: scale3d(0.75, 1.25, 1);
+        }
+        50% {
+                -webkit-transform: scale3d(1.15, 0.85, 1);
+                        transform: scale3d(1.15, 0.85, 1);
+        }
+        65% {
+                -webkit-transform: scale3d(0.95, 1.05, 1);
+                        transform: scale3d(0.95, 1.05, 1);
+        }
+        75% {
+                -webkit-transform: scale3d(1.05, 0.95, 1);
+                        transform: scale3d(1.05, 0.95, 1);
+        }
+        100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                        transform: scale3d(1, 1, 1);
+        }
+}
+@keyframes jello-horizontal {
+        0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                        transform: scale3d(1, 1, 1);
+        }
+        30% {
+                -webkit-transform: scale3d(1.25, 0.75, 1);
+                        transform: scale3d(1.25, 0.75, 1);
+        }
+        40% {
+                -webkit-transform: scale3d(0.75, 1.25, 1);
+                        transform: scale3d(0.75, 1.25, 1);
+        }
+        50% {
+                -webkit-transform: scale3d(1.15, 0.85, 1);
+                        transform: scale3d(1.15, 0.85, 1);
+        }
+        65% {
+                -webkit-transform: scale3d(0.95, 1.05, 1);
+                        transform: scale3d(0.95, 1.05, 1);
+        }
+        75% {
+                -webkit-transform: scale3d(1.05, 0.95, 1);
+                        transform: scale3d(1.05, 0.95, 1);
+        }
+        100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                        transform: scale3d(1, 1, 1);
+        }
+}
+
+/* ----------------------------------------------
+                ENTER ANIMATIONS
+ * ---------------------------------------------- */
+ .slide-in-top {
+	-webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-top {
+0% {
+        -webkit-transform: translateY(-1000px);
+                transform: translateY(-1000px);
+        opacity: 0;
+}
+100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+}
+}
+@keyframes slide-in-top {
+0% {
+        -webkit-transform: translateY(-1000px);
+                transform: translateY(-1000px);
+        opacity: 0;
+}
+100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+}
+}
+      
 .slide-in-right {
 	-webkit-animation: slide-in-right 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: slide-in-right 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -67,6 +167,9 @@
 }
 }
       
+/* ----------------------------------------------
+                EXIT ANIMATIONS
+ * ---------------------------------------------- */
 .slide-out-left {
 	-webkit-animation: slide-out-left 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
         animation: slide-out-left 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -95,4 +198,6 @@
         opacity: 0;
 }
 }
+      
+
       
