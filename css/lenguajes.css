@@ -121,9 +121,9 @@ body{
 }
 .picSelection #closePic{
     position: absolute; 
-    right: 2vw;
-    top: 2vw;
-    border: none;
+    right: 1vw;
+    top: 1vw;
+    border: solid 3px #ffbf00;
     border-radius: 50%;
     font-size: 2em;
     width: 60px;
@@ -131,11 +131,12 @@ body{
     background-color: #000;
     color: #ffbf00;
 }
-.picSelection #closePic :hover{
+.picSelection #closePic:hover{
     opacity: 0.6;
 }
 .picSelection .picContainer #picSelected{
     height: 100%;
+    max-width: 100%;
     border-radius: 10px;
 }
 

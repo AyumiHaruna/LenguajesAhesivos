@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
             },
 
             autoplay: {
-                delay: 2000,
-                disableOnInteraction: false,
+                delay: 8000,
+                disableOnInteraction: true,
             },
 
             // breakpoints: {
@@ -74,14 +74,22 @@ document.addEventListener('DOMContentLoaded', function() {
             },
 
             autoplay: {
-                delay: 2000,
-                disableOnInteraction: false,
+                delay: 8000,
+                disableOnInteraction: true,
             },
         });
 
         //hide second gallery
         document.getElementById("comun1-2").style.display = "none"; 
     }
+
+
+    //function for close gallery btn
+    var closeBtn = document.getElementById("closePic");
+    closeBtn.addEventListener("click", e=>{
+        let popUp = document.getElementById("picSelection");
+        popUp.style.display = "none";
+    });
 }, false);
 
 
@@ -172,7 +180,9 @@ function changeTo( current, next ){
 
 //muestra pop-up con imagen seleccionada
 function showImage( sel ){
-    console.log(sel);
+    console.log(sel.dataset.content);
     let popUp = document.getElementById("picSelection");
     popUp.style.display = "block";
+    let picSel = document.getElementById("picSelected");
+    picSel.src = sel.dataset.content;
 }
